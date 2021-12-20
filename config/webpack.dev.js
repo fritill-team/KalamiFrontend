@@ -33,6 +33,10 @@ module.exports = merge(common, {
           { loader: 'sass-loader', options: { sourceMap: true } },
         ],
       },
+      {
+        test: /\.pug$/,
+        use: ['pug-loader']
+      }
     ],
   },
 })
