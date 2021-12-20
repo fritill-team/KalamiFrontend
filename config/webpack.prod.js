@@ -31,6 +31,10 @@ module.exports = merge(common, {
           'sass-loader',
         ],
       },
+      {
+        test: /\.pug$/,
+        use: ['pug-loader']
+      }
     ],
   },
   plugins: [
