@@ -55,6 +55,12 @@ module.exports = {
 
       // Fonts and SVGs: Inline files
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
+
+      // Pug files
+      {
+        test: /\.pug$/,
+        use: ['pug-loader']
+      }
     ],
   },
 

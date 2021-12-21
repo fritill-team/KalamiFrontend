@@ -30,10 +30,6 @@ module.exports = merge(common, {
           'postcss-loader',
           'sass-loader',
         ],
-      },
-      {
-        test: /\.pug$/,
-        use: ['pug-loader']
       }
     ],
   },

@@ -16,6 +16,8 @@ module.exports = merge(common, {
     compress: true,
     hot: true,
     port: 8080,
+    liveReload: true
+
   },
 
   module: {
@@ -32,10 +34,6 @@ module.exports = merge(common, {
           { loader: 'postcss-loader', options: { sourceMap: true } },
           { loader: 'sass-loader', options: { sourceMap: true } },
         ],
-      },
-      {
-        test: /\.pug$/,
-        use: ['pug-loader']
       }
     ],
   },
