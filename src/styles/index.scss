@@ -6,3 +6,52 @@
 @import 'variables';
 @import 'scaffolding';
 @import "@muicss/dist/css/mui.min.css";
+// @import "bower_components/mui/src/sass/mui/colors";
+
+/**
+ * Header CSS
+ */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header ul.mui-list--inline {
+  margin-bottom: 0;
+}
+
+header .title {
+  // color: mui-color('purple', '500');
+  color: #000;
+}
+
+header table {
+  width: 100%;
+}
+
+/**
+ * Content CSS
+ */
+#content-wrapper {
+  min-height: 100%;
+
+  /* sticky footer */
+  box-sizing: border-box;
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+}
+
+
+/**
+ * Footer CSS
+ */
+footer {
+  box-sizing: border-box;
+  height: 100px;
+  background-color: #eee;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 35px;
+}
