@@ -1,2 +1,2 @@
 import '@/styles/index.scss'
-// import '~muicss/dist/js/mui.min.js'
+import 'muicss/dist/js/mui.min.js'
