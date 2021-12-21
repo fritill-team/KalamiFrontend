@@ -5,14 +5,23 @@ html(lang="en" dir="ltr")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title Kalami
-    link(href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css")
-    //- link(href="bower_components/mui/src/sass/mui/colors" rel="stylesheet" type="text/css")
-    //- link(href="//cdn.muicss.com/mui-0.10.3/extra/mui-colors.min.css" rel="stylesheet" type="text/css")
-    //- link(rel="stylesheet" href="../styles/index.scss")
-    script(src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js") 
-    //- script(src="//cdn.muicss.com/mui-0.10.3/extra/mui-combined.min.js")
+    
   body
-    #sidebar
-      .mui--text-light.mui--text-display1.mui--align-vertical SAMPLE BLOG
-    #content.mui-container-fluid
-      block content
+    header.mui-appbar.mui--z1
+      .mui-container
+        .mui--appbar-height
+          .mui--text-title.title Kalami
+
+    #content-wrapper.container
+      .content-left-sidebar
+        | left side bar
+
+      .content-main.mui--text-center
+        block content
+
+      .content-right-sidebar
+        | right side bar
+
+    .footer.mui-container.mui--text-center
+      | Made with &hearts; by 
+      a(href='https://www.muicss.com') Fritill
