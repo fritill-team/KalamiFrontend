@@ -13,15 +13,11 @@ html(lang="en" dir="rtl")
           .mui--text-title.title Kalami
 
     #content-wrapper.container
-      .content-left-sidebar
-        | left side bar
+      include ../partials/left-sidebar
 
       .content-main.mui--text-center
         block content
 
-      .content-right-sidebar
-        | right side bar
+      include ../partials/right-sidebar
 
-    .footer.mui-container.mui--text-center
-      | Made with &hearts; by
-      a(href='https://www.muicss.com') Fritill
+    include ../partials/footer
