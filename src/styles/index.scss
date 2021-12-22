@@ -14,10 +14,10 @@ body {
   height: 15vh;
   background-color: #eee;
   border-top: 1px solid #e0e0e0;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  // position: fixed;
+  // bottom: 0;
+  // right: 0;
+  // left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,7 @@ body {
   width: 216px;
   // left: -200px;
   overflow: auto;
-  z-index: 2;
+  z-index: 10;
   background-color: #fff;
   transition: transform 0.2s;
   text-align: center;
@@ -103,7 +103,15 @@ body {
   margin-left: 0px;
   transition: margin-left 0.2s;
 }
-
+.main{
+  // flex: 1;
+  // display: flex;
+  // justify-content: space-between;
+}
+.content-main{
+  background-color: #c6c2c2;
+  padding-right: 214px;
+}
 @media (min-width: 768px) {
   #header {
     left: 200px;

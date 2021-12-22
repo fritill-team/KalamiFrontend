@@ -17,14 +17,14 @@ html(lang="en" dir="ltr")
     #content-wrapper.container
       include ../partials/left-sidebar
 
-      .content-main.mui--text-center
-        block content
-
-      include ../partials/right-sidebar
+      .main
+        .content-main.mui--text-center
+          block content
+        include ../partials/right-sidebar
 
 
     include ../partials/footer
-    
+
     script.
      jQuery(function ($) {
      $bodyEl = $('body'),
