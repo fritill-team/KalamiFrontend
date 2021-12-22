@@ -24,6 +24,7 @@ html(lang="en" dir="ltr")
 
 
     include ../partials/footer
+    
     script.
      jQuery(function ($) {
      $bodyEl = $('body'),
@@ -51,10 +52,10 @@ html(lang="en" dir="ltr")
       $('.js-hide-sidedrawer').on('click', hideSidedrawer);
       });
     script.
-     var $titleEls = $('strong', $sidedrawerEl);
-     $titleEls
-     .next()
-     .hide();
-     $titleEls.on('click', function() {
-     $(this).next().slideToggle(200);
+    //-  var $titleEls = $('strong', $sidedrawerEl);
+    //-  $titleEls
+    //-  .next()
+    //-  .hide();
+    //-  $titleEls.on('click', function() {
+    //-  $(this).next().slideToggle(200);
      });
