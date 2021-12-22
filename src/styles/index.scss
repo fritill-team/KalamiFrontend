@@ -4,6 +4,7 @@
 html[dir=rtl] {
   @import "~muicss/dist/css/mui-rtl.min.css";
 }
+@import '@/styles/components/pack-card.scss';
 
 body {
   height: 100%;
@@ -109,7 +110,7 @@ body {
   // justify-content: space-between;
 }
 .content-main{
-  background-color: #c6c2c2;
+  // background-color: #c6c2c2;
   padding-right: 214px;
 }
 @media (min-width: 768px) {

@@ -1,6 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 const path = require('path')
 const glob = require('glob')
 const paths = require('./paths')
@@ -53,7 +54,7 @@ module.exports = {
 
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
-    ...getPugPages()
+    ...getPugPages(),
    /* new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
       // favicon: paths.src + '/images/favicon.png',
@@ -61,6 +62,13 @@ module.exports = {
       filename: 'index.html', // output file
       // inject: false,
     }),*/
+
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.$": "jquery",
+      "window.jQuery": "jquery",
+    }),
   ],
 
   // Determine how modules within the project are treated
