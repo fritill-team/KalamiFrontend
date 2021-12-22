@@ -1,8 +1,25 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+const path = require('path')
+const glob = require('glob')
 const paths = require('./paths')
+
+const getDirectories = (src, callback, options = null) => glob.sync(src, options).map(f => callback(f))
+
+const getPugPages = () => getDirectories(
+  paths.src + '/views/' + '/**/*.pug',
+  (file) => {
+    let dirName = path.dirname(file).split(path.sep).pop(),
+      FName = path.basename(file).replace('.pug', '.html'),
+      filename = dirName.indexOf('views') === -1 && dirName.indexOf('pages') === -1 ? dirName + path.sep + FName : FName
+
+    return new HtmlWebpackPlugin({filename, template: file, inject: true})
+  },
+  {
+    ignore: ['**/mixins/**']
+  }
+)
 
 module.exports = {
   // Where webpack looks to start building the bundle
@@ -36,12 +53,14 @@ module.exports = {
 
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
-    new HtmlWebpackPlugin({
+    ...getPugPages()
+   /* new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
-      favicon: paths.src + '/images/favicon.png',
-      template: paths.src + '/index.pug', // template file
+      // favicon: paths.src + '/images/favicon.png',
+      template: paths.src + 'views/index.pug', // template file
       filename: 'index.html', // output file
-    }),
+      // inject: false,
+    }),*/
   ],
 
   // Determine how modules within the project are treated
@@ -59,7 +78,7 @@ module.exports = {
       // Pug files
       {
         test: /\.pug$/,
-        use: ['pug-loader']
+        use: ['html-loader', 'pug-html-loader'] // 'pug-loader'
       }
     ],
   },
