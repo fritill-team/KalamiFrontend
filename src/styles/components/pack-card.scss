@@ -1,5 +1,5 @@
 .pack-card-container {
-  border: 1px solid #e3dcdc;
+  // border: 1px solid #e3dcdc;
   border-radius: 18px;
   background-color: #f1f6f0;
   margin: 20px;
@@ -9,13 +9,25 @@
   justify-content: space-around;
   align-items: center;
   padding: 11px 0;
+  // position: relative;
   // margin-top: 85px;
   margin: 130px 0 0px 20px;
-
-
-
+  // animation: card-animation 5s ;
 }
+// @keyframes card-animation {
+// }
 
+// .pack-card-container:active{
+//   width: 117px;
+//   border: none;
+//   transition: 0.7s;
+//   margin: 153px 0 0px 29px;
+// }
+
+// .overlay{
+//   background-color: currentColor;
+//   position: absolute;
+// }
 img {
   width: 50%;
   height: 50%; 
@@ -25,7 +37,7 @@ img {
 
 .pack-card-description {
   font-size: 16px;
-
+}
   .pack-card-title {
     font-weight: 700;
   }
@@ -33,4 +45,3 @@ img {
   .pack-card-subtitle {
     font-weight: 400;
   }
-}
