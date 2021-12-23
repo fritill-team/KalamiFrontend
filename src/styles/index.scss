@@ -170,6 +170,10 @@ body {
   text-decoration: none;
 }
 
+#sidedrawer .username {
+  height: 50px;
+  padding-top: 0;
+}
 
 
 // search-bar
@@ -198,8 +202,6 @@ body {
     background-color: #e3dbdb;
     border: none;
     flex: .4;
-
-
   }
 
   span {
@@ -211,6 +213,18 @@ body {
     color: #756f6f;
     border-radius: 0 8px 8px 0;
     margin-left: -1px;
+  }
+}
+
+.mui-divider {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 451px;
+
+    li {}
   }
 }
 
