@@ -1,7 +1,10 @@
 extends layouts/main
 
 block content 
-    .search-bar
-      input(type='text' placeholder='Search here..')
-    span.material-icons
-    | search
+		.search-bar-container
+			.search-bar
+				input(type='text' placeholder='Search here..')
+				span.material-icons
+					| search
+
+		include ./packs 
