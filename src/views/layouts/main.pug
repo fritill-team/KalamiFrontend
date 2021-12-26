@@ -18,6 +18,12 @@ html(lang="en" dir="ltr")
 			include ../partials/left-sidebar
 
 		.main#content-wrapper.container
-				.content-main
-					block content
+			.content-main
+				.search-bar-container
+					.search-bar
+						input(type='text' placeholder='Search here..')
+						span.material-icons
+							| search
+				block content
 				//- include ../partials/right-sidebar
+
