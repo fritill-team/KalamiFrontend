@@ -1,10 +1,13 @@
 extends layouts/main
+include ./mixins/pack-card
 
-block content 
-		.search-bar-container
-			.search-bar
-				input(type='text' placeholder='Search here..')
-				span.material-icons
-					| search
 
-		include ./packs 
+block content
+  .pack-card-container
+
+    +pack-card
+  //.search-bar-container
+    //	.search-bar
+    //		input(type='text' placeholder='Search here..')
+    //		span.material-icons
+    //			| search

@@ -1,4 +1,4 @@
 import '@/styles/index.scss'
-import 'muicss/dist/js/mui.min.js'
+import 'material-design-lite/material.min'
 import '@/js/sidebar'
 import '@/js/toggle-header'

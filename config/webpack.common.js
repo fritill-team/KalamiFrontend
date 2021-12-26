@@ -86,7 +86,7 @@ module.exports = {
       // Pug files
       {
         test: /\.pug$/,
-        use: ['html-loader', 'pug-html-loader'] // 'pug-loader'
+        use: ['html-loader', 'pug-html-loader'] //
       }
     ],
   },

@@ -1,52 +1,67 @@
-#sidedrawer.mui--no-user-select
-	#sidedrawer-brand.mui--appbar-line-height
-	.username.mui--text-title logo
-		//- img(src='./images/logo.png' alt='logo')
-	.mui-divider
-		ul
-			li
-				a(href='#')
-					span.material-icons
-						|account_circle
-					|My account
-			li
-				a(href='#') 
-					span.material-icons
-						|language
-					|language
-			li
-				a(href='#')
-					span.material-icons
-						|subscriptions
-					|subscriptions
-			li
-				a(href='#')
-					span.material-icons
-						|attach_money
-					|plans
-			li
-				a(href='#')
-					span.material-icons
-						|send
-					|feedbak
-			li
-				a(href='#')
-					span.material-icons
-						|description
-					|about
-			li
-				a(href='#')
-					//- img(src='../../images/apple-store.png' alt='apple store')
-					| apple store
-			
-			li
-				a(href='#')
-					//- img(src='../../images/google-play.png' alt='google play')
-					| google play
+.mdl-layout__drawer
+  a(href='/' class="mdl-layout-title")
+    img(src='~images/apple-store.png' alt='apple store')
+    //- Navigation
+  nav.mdl-navigation.mdl-list
+    a(class="mdl-navigation__link" href="/account.html") My Account
+    a(class="mdl-navigation__link" href="/plans.html") Plans
+    a(class="mdl-navigation__link" href="/subscriptions.html") Subscriptions
+    a(class="mdl-navigation__link" href="/feedback.html") feedback
+    a(class="mdl-navigation__link" href="/about.html") feedback
 
-header#header
-	.mui-appbar.mui--appbar-line-height
-		.mui-container-fluid
-			a.sidedrawer-toggle.mui--visible-xs-inline-block.mui--visible-sm-inline-block.js-show-sidedrawer &#x2630;
-			a.sidedrawer-toggle.mui--hidden-xs.mui--hidden-sm.js-hide-sidedrawer &#x2630;
-			span.mui--text-title.mui--visible-xs-inline-block kalami
+  div(class="mdl-grid" style="margin-top:auto")
+
+    a(href='#' class="mdl-cell mdl-cell--6-col")
+      img(src='~images/apple-store.png' alt='apple store')
+    a(href='#' class="mdl-cell mdl-cell--6-col")
+      img(src='~images/google-play.png' alt='google play')
+    .mdl-cell.mdl-cell--12-col
+      p copy rights
+//#sidedrawer.mui--no-user-select
+  #sidedrawer-brand.mui--appbar-line-height
+  .username.mui--text-title logo
+    //- img(src='./images/logo.png' alt='logo')
+  .mui-divider
+    ul
+      li
+        a(href='#')
+          span.material-icons
+            |account_circle
+          |
+      li
+        a(href='#')
+          span.material-icons
+            |language
+          |
+      li
+        a(href='#')
+          span.material-icons
+            |subscriptions
+          |
+      li
+        a(href='#')
+          span.material-icons
+            |attach_money
+          |
+      li
+        a(href='#')
+          span.material-icons
+            |send
+          |
+      li
+        a(href='#')
+          span.material-icons
+            |description
+          |
+      li
+
+
+      li
+
+//
+//header#header
+//  .mui-appbar.mui--appbar-line-height
+//    .mui-container-fluid
+//      a.sidedrawer-toggle.mui--visible-xs-inline-block.mui--visible-sm-inline-block.js-show-sidedrawer &#x2630;
+//      a.sidedrawer-toggle.mui--hidden-xs.mui--hidden-sm.js-hide-sidedrawer &#x2630;
+//      span.mui--text-title.mui--visible-xs-inline-block kalami

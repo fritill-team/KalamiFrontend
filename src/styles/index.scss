@@ -1,9 +1,4 @@
-@import "~muicss/dist/css/mui.min.css";
-@import "~muicss/dist/extra/mui-colors.min.css";
-
-html[dir=rtl] {
-  @import "~muicss/dist/css/mui-rtl.min.css";
-}
+@import "~material-design-lite/material.min.css";
 
 @import '@/styles/components/pack-card.scss';
 
