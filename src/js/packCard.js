@@ -23,7 +23,7 @@ const cardColors = [
   '#FCE4EC'
 ];
 
-const C = cardColors[Math.floor(Math.random() * cardColors.length)];
+const gitRandomColor = cardColors[Math.floor(Math.random() * cardColors.length)];
 console.log('colors',gitRandomColor);
 
 $(".pack-card").css("background",gitRandomColor);
