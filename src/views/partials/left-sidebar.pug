@@ -3,20 +3,53 @@
     img(src='~images/apple-store.png' alt='apple store')
     //- Navigation
   nav.mdl-navigation.mdl-list
-    a(class="mdl-navigation__link" href="/account.html") My Account
-    a(class="mdl-navigation__link" href="/plans.html") Plans
-    a(class="mdl-navigation__link" href="/subscriptions.html") Subscriptions
-    a(class="mdl-navigation__link" href="/feedback.html") feedback
-    a(class="mdl-navigation__link" href="/about.html") feedback
+    a(class="mdl-navigation__link" href="/account.html") 
+      i.material-icons.mdl-list__item-icon account_circle
+      |  Account
+    a(class="mdl-navigation__link" href="/plans.html") 
+      i.material-icons.mdl-list__item-icon local_atm
+      |  Plans
+    a(class="mdl-navigation__link" href="/subscriptions.html") 
+      i.material-icons.mdl-list__item-icon subscriptions
+      |  Subscriptions
+    a(class="mdl-navigation__link" href="/feedback.html") 
+      i.material-icons.mdl-list__item-icon send
+      |  feedback
+    a(class="mdl-navigation__link" href="/account.html") 
+      i.material-icons.mdl-list__item-icon language
+      |  language
+    a(class="mdl-navigation__link" href="/about.html") 
+      i.material-icons.mdl-list__item-icon info
+      |  About
+    a(class="mdl-navigation__link" href="/about.html")
+      i.material-icons.mdl-list__item-icon call
+      |  contact us
 
-  div(class="mdl-grid" style="margin-top:auto")
 
-    a(href='#' class="mdl-cell mdl-cell--6-col")
+    a(href='/#' class="mdl-list__item")
+      img(src='~images/google-play.png' alt='apple store')
+
+    a(href='/#' class="mdl-list__item")
       img(src='~images/apple-store.png' alt='apple store')
-    a(href='#' class="mdl-cell mdl-cell--6-col")
-      img(src='~images/google-play.png' alt='google play')
-    .mdl-cell.mdl-cell--12-col
-      p copy rights
+
+    .mdl-list__item.copy-right
+      a(href='#')
+        .footer__logo
+          //- img(src='~images/logo.png' alt='logo kalami')
+          | kalami
+      p
+        | &copy; 2022 
+        strong Itqadem
+          | . All Rights Reserved.
+    .fritill
+      p Developed and designed by
+      a(href="https://fritill.com/" class="fritill-logo")
+        img(class="fritill-logo-image" src='~images/Fritill-logo.png', alt="fritill-logo")
+
+    //- .mdl-cell.mdl-cell--12-col
+    //-   p copy rights
+
+
 //#sidedrawer.mui--no-user-select
   #sidedrawer-brand.mui--appbar-line-height
   .username.mui--text-title logo
