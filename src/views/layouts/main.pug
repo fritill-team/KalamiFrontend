@@ -8,14 +8,4 @@ html(lang="en" dir="ltr")
     title Kalami
 
   body
-    .mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--fixed-header
-      include ../partials/header
-      include ../partials/left-sidebar
-
-      main.mdl-layout__content
-        .page-content
-          .search-bar-container
-            .search-bar
-              input(type='text' placeholder='Search here..')
-              span.material-icons search
-          block content
+    block layout
