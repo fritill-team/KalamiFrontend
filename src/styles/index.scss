@@ -1,8 +1,8 @@
 @import "~material-design-lite/material.min.css";
 
-@import '@/styles/components/pack-card.scss';
+@import 'components/pack-card.scss';
 
-@import "_auth.css";
+@import "auth";
 
 body {
   height: 100%;
