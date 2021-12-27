@@ -115,7 +115,7 @@ body {
     padding-left: 4px;
     border: 1px solid #f7f1f1;
     flex: 1;
-    padding-left: 23px;
+    padding-left: 36px;
 
   }
 
@@ -125,7 +125,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
+    left: 9px;
   }
 }
 
@@ -134,5 +134,34 @@ body {
   height: 305px;
   background-color: #e4e4ee;
   padding-left: 241px;
+  display: flex;
 
+  img {
+    padding: 17px;
+  }
+
+  .expand-header__description {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    margin: 10px;
+    // text-align: center;
+
+
+    span{
+      margin-top: 5px;
+    }
+    .expand-header__titl {
+      font-size: 24px;
+      font-weight: 600;
+      overflow: unset;
+      margin: 17px 0;
+    }
+
+    .expand-header__subtitle {
+      font-size: 18px;
+
+    }
+  }
 }
