@@ -23,7 +23,17 @@ const cardColors = [
   '#FCE4EC'
 ];
 
-const gitRandomColor = cardColors[Math.floor(Math.random() * cardColors.length)];
-console.log('colors',gitRandomColor);
+const getRandomColor =() => cardColors[Math.floor(Math.random() * cardColors.length)];
+console.log('colors',getRandomColor);
 
-$(".pack-card").css("background",gitRandomColor);
+const cardTemplate = (card = {})=>$(`<div class='mdl-cell mdl-cell--2-col'>
+<a class="pack-card" href="#" style='color: ${getRandomColor()}'>
+<img class="pack-card__image" src="/03d4721617f17cd915b3.png" alt="image"><div class="pack-card__title">Sister</div></a>
+</div>`)
+const container = $("#allCards")
+
+if (container.length){
+  for(let i =0 ; i<=20; i++){
+    container.append(cardTemplate())
+  }
+}
