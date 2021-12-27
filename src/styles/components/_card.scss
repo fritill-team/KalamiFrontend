@@ -1,0 +1,15 @@
+.mdl-card {
+
+  &.mdl-card--unset-width {
+    margin: 0 8px;
+    width: unset;
+
+    .mdl-card__supporting-text {
+      width: unset;
+    }
+
+  }
+
+
+
+}

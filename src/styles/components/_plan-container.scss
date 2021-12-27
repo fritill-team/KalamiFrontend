@@ -1,0 +1,17 @@
+.plans-container {
+  .mdl-card__title {
+    color: #fff;
+    height: 150px;
+    background: url('@/images/dog.png') bottom right 15% no-repeat #46B6AC;
+  }
+
+  .plans-container__plan {
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+
+  .plans-container__submit {
+    width: 100%;
+    border-radius: 20px;
+  }
+}

@@ -1,7 +1,13 @@
 extends layouts/app
 include ./mixins/pack-card
 
-block content 
-	.pack-card-container 
-		
-			+pack-card 
+block page-title
+  | Subscriptions & Plans
+
+block content
+  .mdl-grid
+    .mdl-cell--8-col
+      include partials/my-subscriptions
+
+    .mdl-cell--4-col
+      include partials/plans
