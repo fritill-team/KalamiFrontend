@@ -20,20 +20,27 @@ const cardColors = [
   '#FFCC80',
   '#FFAB91',
   '#FFF176',
-  '#FCE4EC'
-];
+  '#FCE4EC',
+]
 
-const getRandomColor =() => cardColors[Math.floor(Math.random() * cardColors.length)];
-console.log('colors',getRandomColor);
+const cardTitles = [
+  'sister', 'brother', ' mother', 'father',
+]
 
-const cardTemplate = (card = {})=>$(`<div class='mdl-cell mdl-cell--2-col'>
-<a class="pack-card" href="#" style='color: ${getRandomColor()}'>
-<img class="pack-card__image" src="/03d4721617f17cd915b3.png" alt="image"><div class="pack-card__title">Sister</div></a>
+const getRandomColor = () => cardColors[Math.floor(Math.random() * cardColors.length)]
+const getRandomTitle = () => cardTitles[Math.floor(Math.random() * cardTitles.length)]
+console.log('colors', getRandomColor)
+
+const cardTemplate = (card = {}) => $(`<div class='mdl-cell mdl-cell--2-col'>
+  <a class='pack-card' href='#' style='color: ${getRandomColor()}'>
+  <img class='pack-card__image' src='/03d4721617f17cd915b3.png' alt='image'>
+  <p class='pack-card__title'>${getRandomTitle()}</p>
+  </a>
 </div>`)
-const container = $("#allCards")
+const container = $('#allCards')
 
-if (container.length){
-  for(let i =0 ; i<=20; i++){
+if (container.length) {
+  for (let i = 0; i <= 20; i++) {
     container.append(cardTemplate())
   }
 }
