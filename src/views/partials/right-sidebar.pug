@@ -1,26 +1,53 @@
-#sidedrawer-right.mui--no-user-select
-  #sidedrawer-brand.mui--appbar-line-height
-  .username.mui--text-title
-    //- img.topic-image(src='../../../images/avatar.png' alt='avatar')
-  .mui-divider
-  ul
-      li
-       a(href='#') Description
-      li
-       a(href='#') Description
-      li
-       a(href='#') Description
-      li
-       a(href='#') Description
-      li
-       a(href='#') Description
-      li
-       a(href='#') Description
-      
+//- .sidebar-top 
+//- 	button.mdl-button.mdl-js-button.mdl-button--fab.mdl-button--mini-fab.mdl-button--colored
+//- 		i.material-icons star_border
+//- 	img(src='~images/girl.png' alt='image' class="sidebar-top__image")
+//- 	button.mdl-button.mdl-js-button.mdl-button--fab.mdl-button--mini-fab.mdl-button--colored
+//- 		i.material-icons autorenew
 
-#header-right
-  .mui-appbar.mui--appbar-line-height
-    .mui-container-fluid
-      //- a.sidedrawer-toggle-right.mui--visible-xs-inline-block.mui--visible-sm-inline-block.js-show-sidedrawer &#x2715;
-      //- a.sidedrawer-toggle-right.mui--hidden-xs.mui--hidden-sm &#x2715;
-      //- span.mui--text-title.mui--visible-xs-inline-block kalami
+//- .sidebar-mid 
+//- 	.sidebar-mid__title Help 
+//- 	.sidebar-mid__subTitle Conversation 
+
+
+//- .sidebar-bottom
+//- 	ul.demo-list-icon.mdl-list
+//- 		li.mdl-list__item
+//- 			span.mdl-list__item-primary-content
+//- 				i.material-icons.mdl-list__item-icon insert_emoticon
+//- 				|     Help me.
+//- 		li.mdl-list__item
+//- 			span.mdl-list__item-primary-content
+//- 				i.material-icons.mdl-list__item-icon insert_emoticon
+//- 				|     can you help me
+//- 		li.mdl-list__item
+//- 			span.mdl-list__item-primary-content
+//- 				i.material-icons.mdl-list__item-icon insert_emoticon
+//- 				|     I need help
+//- 		li.mdl-list__item
+//- 			span.mdl-list__item-primary-content
+//- 				i.material-icons.mdl-list__item-icon insert_emoticon
+//- 				|     Do you need help
+
+
+.demo-layout-transparent.mdl-layout.mdl-js-layout
+  header.mdl-layout__header.mdl-layout__header--transparent
+    .mdl-layout__header-row
+      // Title
+      span.mdl-layout-title Title
+      // Add spacer, to align navigation to the right
+      .mdl-layout-spacer
+      // Navigation
+      nav.mdl-navigation
+        a.mdl-navigation__link(href='') Link
+        a.mdl-navigation__link(href='') Link
+        a.mdl-navigation__link(href='') Link
+        a.mdl-navigation__link(href='') Link
+  .mdl-layout__drawer
+    span.mdl-layout-title Title
+    nav.mdl-navigation
+      a.mdl-navigation__link(href='') Link
+      a.mdl-navigation__link(href='') Link
+      a.mdl-navigation__link(href='') Link
+      a.mdl-navigation__link(href='') Link
+  main.mdl-layout__content

@@ -1,0 +1,29 @@
+.sidebar-top{
+  display: flex;
+  
+  .sidebar-top__image{
+    width: 34%;
+  }
+}
+
+.sidebar-mid{
+  text-align: center;
+  margin-top: 19px;
+
+  .sidebar-mid__title{
+    font-weight: 600;
+    font-size: 23px;
+  }
+
+  .sidebar-mid__subTitle{
+    margin-top: 5px;
+  }
+}
+.mdl-button--fab.mdl-button--colored {
+  background: #81b8e6;
+  color: #000;
+}
+
+.mdl-list__item .mdl-list__item-primary-content .mdl-list__item-icon {
+  margin-right: 10px;
+}
