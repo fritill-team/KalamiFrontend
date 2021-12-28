@@ -34,7 +34,7 @@ export const getRandomTitle = () => cardTitles[Math.floor(Math.random() * cardTi
 export const cardTemplate = (card = {}) => $(`<div class='mdl-cell mdl-cell--2-col'>
   <a class='pack-card' href='#' style='color: ${card.color}'>
   <img class='pack-card__image' src='${card.image}' alt='image'>
-  <p class='pack-card__title  mdl-typography--font-bold'>${card.title}</p>
+  <p class='pack-card__title  mdl-typography--font-bold'>${card.text}</p>
   </a>
 </div>`)
 

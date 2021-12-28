@@ -1,7 +1,7 @@
 import { cardTemplate, getRandomColor, getRandomTitle } from '@/js/packCard'
 
 const container = $('#sentence-composition')
-
+console.log(container)
 if (container.length) {
   console.log('rezsd')
   for (let i = 0; i <= 20; i++) {
