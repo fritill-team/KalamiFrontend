@@ -32,6 +32,11 @@ $(document)
     // $("#header").after('<div>').addClass("expand-header");
     subHeader.empty()
     subHeader.append(getHeaderTemplate(card))
+    
+    var sidebarBG = self.css('color')
+    console.log('sidebarBG',sidebarBG)
+    $('.right-sidebar-container').css({display: "block", backgroundColor:'sidebarBG'})
+
   })
   .on('click', '.arrow', function() {
     subHeader.empty()
