@@ -38,15 +38,36 @@ body {
   transition: left 0.2s;
 }
 
+
 .mdl-layout__drawer {
+  min-height: 750px;
+
   img {
-    width: 90%;
+    width: 60%;
   }
+  .kalami-logo{
+    width: 100%;
+  }
+}
+.mdl-navigation__link .material-icons{
+  margin-right: 15px;
 }
 
 .mdl-list__item {
   justify-content: center;
   cursor: pointer;
+}
+.demo-list-icon {
+  width: 240px;
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+
+  .sidebar-footer__download{
+    padding: 4px;
+  }
 }
 
 .copy-right {
@@ -84,7 +105,7 @@ body {
     justify-content: center;
 
     .fritill-logo-image {
-      width: 50%;
+      width: 40%;
     }
   }
 }
