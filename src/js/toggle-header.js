@@ -1,15 +1,19 @@
 // import 'muicss/dist/js/mui.min.js'
 const getHeaderTemplate = (card) => $(`
   <div class='expand-header' style='background-color: ${card.bgColor}'>
-    <div>
-      <i class='material-icons arrow'>arrow_back</i>
-    </div>
+
+    <button class="mdl-button mdl-js-button mdl-button--icon arrow">
+      <i class="material-icons">arrow_back</i>
+    </button>
+    
     <img src='${card.img}' alt='card image' />
     <div class='expand-header__description'>
       <div class='expand-header__titl'>${card.title}</div>
-      <span class='material-icons'>
-        volume_up
-      </span>
+
+      <button class="mdl-button mdl-js-button mdl-button--icon sound">
+        <i class="material-icons ">volume_up</i>
+      </button>
+      
     </div>
   </div>`)
 
