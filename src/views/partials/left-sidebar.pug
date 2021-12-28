@@ -1,6 +1,6 @@
 .mdl-layout__drawer
   a(href='/' class="mdl-layout-title")
-    img(src='~images/apple-store.png' alt='apple store')
+    img(src='~images/apple-store.png' alt='apple store' class="kalami-logo")
     //- Navigation
   nav.mdl-navigation.mdl-list
     a(class="mdl-navigation__link" href="account.html")
@@ -23,26 +23,25 @@
       i.material-icons.mdl-list__item-icon logout
       | Logout
 
-    a(href='#' class="mdl-list__item")
-      img(src='~images/google-play.png' alt='apple store')
 
-    a(href='#' class="mdl-list__item")
-      img(src='~images/apple-store.png' alt='apple store')
 
-    .mdl-list__item.copy-right
-      a(href='#')
-        .footer__logo
-          //- img(src='~images/logo.png' alt='logo kalami')
-          | kalami
-      p
-        | &copy; 2022 
-        strong Itqadem
-          | . All Rights Reserved.
-    .fritill
-      p Developed and designed by
-      a(href="https://fritill.com/" class="fritill-logo")
-        img(class="fritill-logo-image" src='~images/Fritill-logo.png', alt="fritill-logo")
+    .sidebar-footer 
+      a(href='#' class="mdl-list__item sidebar-footer__download")
+        img(src='~images/google-play.png' alt='apple store')
 
-    //- .mdl-cell.mdl-cell--12-col
-    //-   p copy rights
+      a(href='#' class="mdl-list__item sidebar-footer__download")
+        img(src='~images/apple-store.png' alt='apple store')
 
+      .mdl-list__item.copy-right
+        a(href='#')
+          .footer__logo
+            //- img(src='~images/logo.png' alt='logo kalami')
+            | kalami
+        p
+          | &copy; 2022 
+          strong Itqadem
+            | . All Rights Reserved.
+      .fritill
+        p Developed and designed by
+        a(href="https://fritill.com/" class="fritill-logo")
+          img(class="fritill-logo-image" src='~images/Fritill-logo.png', alt="fritill-logo")
