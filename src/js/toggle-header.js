@@ -34,7 +34,9 @@ $(document)
     subHeader.empty()
     subHeader.append(getHeaderTemplate(card))
     
-    
+    // color of text
+    $('.mdl-navigation__link').css({color:'#000'})
+
     // click on topic element not pack element
     $('#right-sidebar').css({display: "block"})
     $('#overlay').addClass('is-visible')
@@ -47,6 +49,8 @@ $(document)
     subHeader.empty()
     // #3f51b5
     $('.header-change-color').css({backgroundColor:'#3f51b5' })
+    $('.mdl-navigation__link').css({color:'#fff'})
+
   })
 
   .on('click','#overlay' , function(){

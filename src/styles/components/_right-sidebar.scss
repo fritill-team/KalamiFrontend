@@ -3,10 +3,33 @@
 
   .sidebar-top__image {
     width: 34%;
+    border-radius: 50%;
   }
 }
 
 .sidebar-bottom{
+  span{
+    &:before {
+      content: '';
+      display: block;
+      pointer-events: none;
+      border-radius: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      color: inherit;
+      background-color: currentColor;
+      transition: opacity .2s cubic-bezier(.4, 0, .6, 1);
+    }
+    &:hover, &:active {  
+      opacity: 0.74;
+      
+    }
+  }
+
   .emoji{
     width: 20%;
     padding-right: 7px;
@@ -27,6 +50,7 @@
 
   .sidebar-mid__subTitle {
     margin-top: 5px;
+    margin-bottom: 15px;
   }
 }
 
@@ -52,7 +76,7 @@
   top: 0px;
   right: 299px;
 
-  padding-top: 146px;
+  padding-top: 83px;
 
 
   display: flex;

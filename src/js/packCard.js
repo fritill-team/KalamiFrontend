@@ -40,7 +40,10 @@ const cardTemplate = (card = {}) => $(`<div class='mdl-cell mdl-cell--2-col'>
 const container = $('#allCards')
 
 if (container.length) {
-  for (let i = 0; i <= 20; i++) {
+  for (let i = 0; i <= 6; i++) {
+    container.append(cardTemplate())
+  }
+  for (let i = 0; i <= 6; i++) {
     container.append(cardTemplate())
   }
 }
