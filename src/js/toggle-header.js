@@ -19,6 +19,7 @@ const getHeaderTemplate = (card) => $(`
 
 const subHeader = $('#sub-header')
 
+
 $(document)
   .on('click', '.pack-card', function() {
     console.log('clicked')
@@ -33,13 +34,29 @@ $(document)
     subHeader.empty()
     subHeader.append(getHeaderTemplate(card))
     
-    var sidebarBG = self.css('color')
-    console.log('sidebarBG',sidebarBG)
-    $('.right-sidebar-container').css({display: "block", backgroundColor:'sidebarBG'})
+    
+    // click on topic element not pack element
+    $('#right-sidebar').css({display: "block"})
+    $('#overlay').addClass('is-visible')
+    
+    let headerColor = card.bgColor
+    $('.header-change-color').css({backgroundColor:headerColor , boxShadow: 'none' })
 
   })
   .on('click', '.arrow', function() {
     subHeader.empty()
+    // #3f51b5
+    $('.header-change-color').css({backgroundColor:'#3f51b5' })
+  })
+
+  .on('click','#overlay' , function(){
+    $('#overlay').removeClass('is-visible')
+    $('#right-sidebar').css({display: "none"})
+  })
+
+  .on('click', '.right-sidebar__arrow', function() {
+    $('#overlay').removeClass('is-visible')
+    $('#right-sidebar').css({display: "none"})
   })
 
 
