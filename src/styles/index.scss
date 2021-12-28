@@ -146,7 +146,7 @@ body {
   background-color: #e4e4ee;
   padding-left: 241px;
   display: flex;
-
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
   .arrow {
     margin: 17px 0 0 17px;
   }
@@ -170,15 +170,4 @@ body {
       margin: 10px 0;
     }
   }
-}
-
-// right side bar 
-.right-sidebar-container {
-  height: 100%;
-  // // background-color: #ede7e7;
-  // right: 8px;
-  // top: 252px;
-  // position: fixed;
-  // width: 18%;
-  // display: none;
 }
