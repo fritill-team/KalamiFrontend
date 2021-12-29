@@ -15,11 +15,11 @@ const getPugPages = () => getDirectories(
       FName = path.basename(file).replace('.pug', '.html'),
       filename = dirName.indexOf('views') === -1 && dirName.indexOf('pages') === -1 ? dirName + path.sep + FName : FName
 
-    return new HtmlWebpackPlugin({filename, template: file, inject: true})
+    return new HtmlWebpackPlugin({ filename, template: file, inject: true })
   },
   {
-    ignore: ['**/mixins/**']
-  }
+    ignore: ['**/mixins/**'],
+  },
 )
 
 module.exports = {
@@ -55,19 +55,19 @@ module.exports = {
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     ...getPugPages(),
-   /* new HtmlWebpackPlugin({
-      title: 'webpack Boilerplate',
-      // favicon: paths.src + '/images/favicon.png',
-      template: paths.src + 'views/index.pug', // template file
-      filename: 'index.html', // output file
-      // inject: false,
-    }),*/
+    /* new HtmlWebpackPlugin({
+       title: 'webpack Boilerplate',
+       // favicon: paths.src + '/images/favicon.png',
+       template: paths.src + 'views/index.pug', // template file
+       filename: 'index.html', // output file
+       // inject: false,
+     }),*/
 
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.$": "jquery",
-      "window.jQuery": "jquery",
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.$': 'jquery',
+      'window.jQuery': 'jquery',
     }),
   ],
 
@@ -86,8 +86,14 @@ module.exports = {
       // Pug files
       {
         test: /\.pug$/,
-        use: ['html-loader', 'pug-html-loader'] //
-      }
+        use: ['html-loader', 'pug-html-loader'], //
+      },
+
+      // audio files
+      {
+        test: /\.(mp3|wav|ogg)$/i,
+        loader: 'file-loader',
+      },
     ],
   },
 

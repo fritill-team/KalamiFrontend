@@ -5,6 +5,7 @@ import '@/js/sidebar'
 import '@/js/toggle-header'
 import '@/js/packCard'
 import '@/js/sentenceComposition'
+import '@/js/textToSpeach'
 
 window.flip = function(flip) {
   $('#cube').removeClass();
