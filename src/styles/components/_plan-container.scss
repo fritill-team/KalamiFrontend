@@ -8,6 +8,8 @@
   .plans-container__plan {
     border-radius: 10px;
     margin-bottom: 67px;
+
+    
   }
 
   .plans-container__submit {
@@ -16,16 +18,47 @@
   }
 }
 
-.mdl-radio__outer-circle{
-  top:30px;
-}
-.mdl-radio__inner-circle{
-  top:34px;
+.mdl-radio__outer-circle {
+  top: 30px;
 }
 
-.mdl-radio{
+.mdl-radio__inner-circle {
+  top: 34px;
+}
+
+.mdl-radio {
   min-width: 286px;
 }
-.mdl-list__item{
+
+.mdl-list__item {
   border-radius: 10px;
+}
+
+// plan cards
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #c59fbe8a;
+  color: #000;
+  border-radius: 12px;
+  padding: 10px 0;
+
+
+  .plan-card__image {
+    margin: 5px;
+    width: 70%;
+    border-radius: 50%;
+
+  }
+
+  .plan-card__title {}
+
+  .plan-card__cards {}
+
+  .plan-card__phrases {}
 }

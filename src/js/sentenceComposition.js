@@ -9,6 +9,9 @@ const updateSentence = () => {
     subHeader.append($(`<a class='pack-card ${item.type}' href='#' style='color: ${item.color}' data-data='${JSON.stringify(item)}'>
       <img class='pack-card__image' src='${item.image}' alt='image'>
       <p class='pack-card__title  mdl-typography--font-bold'>${item.text}</p>
+      <span class="material-icons sentence-close ">
+        close
+      </span>
     </a>`))
     subHeader.scrollLeft()
   })
