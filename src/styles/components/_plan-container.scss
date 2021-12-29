@@ -7,11 +7,25 @@
 
   .plans-container__plan {
     border-radius: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 67px;
   }
 
   .plans-container__submit {
     width: 100%;
     border-radius: 20px;
   }
+}
+
+.mdl-radio__outer-circle{
+  top:30px;
+}
+.mdl-radio__inner-circle{
+  top:34px;
+}
+
+.mdl-radio{
+  min-width: 286px;
+}
+.mdl-list__item{
+  border-radius: 10px;
 }
