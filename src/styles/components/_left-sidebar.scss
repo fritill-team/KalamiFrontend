@@ -1,0 +1,109 @@
+.mdl-layout__drawer {
+  min-height: 750px;
+
+  img {
+    width: 60%;
+  }
+
+  .kalami-logo {
+    width: 100%;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  margin-top: 33px;
+
+  .user__image {
+    width: 33%;
+    border-radius: 50%;
+
+  }
+
+  .user__data {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+
+    .user__data__name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .user__data__packs {
+      margin-top: 3px;
+    }
+  }
+
+}
+
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+
+  .sidebar-footer__download {
+    padding: 4px;
+  }
+}
+
+.copy-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+
+  a {
+    text-decoration: none;
+    color: #706f6f;
+    margin-bottom: 7px;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+.mdl-navigation__link .material-icons {
+  margin-right: 15px;
+}
+
+.mdl-list__item {
+  justify-content: center;
+  cursor: pointer;
+}
+
+.demo-list-icon {
+  width: 240px;
+}
+
+.fritill {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -14px;
+  p {
+    margin: 0;
+    font-size: 12px;
+    flex: 3;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .fritill-logo {
+    // display: flex;
+    justify-content: center;
+    flex: 1;
+
+    .fritill-logo-image {
+      width: 43%;
+      // flex: 1;
+    }
+  }
+}

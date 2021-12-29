@@ -4,23 +4,13 @@
 @import 'components/_card.scss';
 @import 'components/_plan-container.scss';
 @import 'components/right-sidebar';
+@import 'components/left-sidebar';
 @import 'senctence';
 
 @import "auth";
 
 body {
   height: 100%;
-}
-
-.footer {
-  box-sizing: border-box;
-  height: 15vh;
-  background-color: #eee;
-  border-top: 1px solid #e0e0e0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
 }
 
 #header {
@@ -32,92 +22,11 @@ body {
   transition: left 0.2s;
 }
 
-#header-right {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  transition: left 0.2s;
-}
-
-.page-content{
+.page-content {
   margin-left: 240px;
   position: relative;
 }
 
-.mdl-layout__drawer {
-  min-height: 750px;
-
-  img {
-    width: 60%;
-  }
-
-  .kalami-logo {
-    width: 100%;
-  }
-}
-
-.mdl-navigation__link .material-icons {
-  margin-right: 15px;
-}
-
-.mdl-list__item {
-  justify-content: center;
-  cursor: pointer;
-}
-
-.demo-list-icon {
-  width: 240px;
-}
-
-.sidebar-footer {
-  position: absolute;
-  bottom: 0;
-
-  .sidebar-footer__download {
-    padding: 4px;
-  }
-}
-
-.copy-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  list-style: none;
-  padding: 10px;
-
-  a {
-    text-decoration: none;
-    color: #706f6f;
-    margin-bottom: 7px;
-
-  }
-
-  p {
-    margin: 0;
-    text-align: center;
-  }
-}
-
-.fritill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    margin: 0;
-  }
-
-  .fritill-logo {
-    display: flex;
-    justify-content: center;
-
-    .fritill-logo-image {
-      width: 40%;
-    }
-  }
-}
 
 .search-bar {
   background-color: #fff;
@@ -133,7 +42,6 @@ body {
     border: 1px solid #f7f1f1;
     flex: 1;
     padding-left: 36px;
-
   }
 
   span {
@@ -152,6 +60,7 @@ body {
   padding-left: 241px;
   display: flex;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+
   .arrow {
     margin: 17px 0 0 17px;
   }

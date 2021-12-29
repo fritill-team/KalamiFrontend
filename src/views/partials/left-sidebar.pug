@@ -1,6 +1,14 @@
 .mdl-layout__drawer
   a(href='/' class="mdl-layout-title")
     img(src='~images/apple-store.png' alt='apple store' class="kalami-logo")
+
+  //- user
+  .user
+    img(src='~images/girl.png' alt='your image' class='user__image')
+    .user__data 
+      .user__data__name  name 
+      .user__data__packs  9 packs
+
     //- Navigation
   nav.mdl-navigation.mdl-list
     a(class="mdl-navigation__link" href="account.html")
@@ -10,7 +18,7 @@
       i.material-icons.mdl-list__item-icon subscriptions
       |  Subscriptions
 
-    .mdl-menu__item--full-bleed-divider
+    //- .mdl-menu__item--full-bleed-divider
     a(class="mdl-navigation__link" href="feedback.html")
       i.material-icons.mdl-list__item-icon send
       |  feedback
