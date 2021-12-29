@@ -8,7 +8,7 @@ const getHeaderTemplate = (card) => $(`
     
     <img src='${card.img}' alt='card image' />
     <div class='expand-header__description'>
-      <div class='expand-header__titl'>${card.title}</div>
+      <div class='expand-header__title'>${card.title}</div>
 
       <button class="mdl-button mdl-js-button mdl-button--icon sound">
         <i class="material-icons ">volume_up</i>
@@ -21,7 +21,7 @@ const subHeader = $('#sub-header')
 
 
 $(document)
-  .on('click', '.pack-card', function() {
+  .on('click', '.pack', function() {
     console.log('clicked')
     let self = $(this)
     let card = {
@@ -34,7 +34,9 @@ $(document)
     subHeader.empty()
     subHeader.append(getHeaderTemplate(card))
     
-    
+    // color of text
+    $('.mdl-navigation__link').css({color:'#000'})
+
     // click on topic element not pack element
     $('#right-sidebar').css({display: "block"})
     $('#overlay').addClass('is-visible')
@@ -47,6 +49,8 @@ $(document)
     subHeader.empty()
     // #3f51b5
     $('.header-change-color').css({backgroundColor:'#3f51b5' })
+    $('.mdl-navigation__link').css({color:'#fff'})
+
   })
 
   .on('click','#overlay' , function(){

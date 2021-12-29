@@ -4,6 +4,7 @@
 @import 'components/_card.scss';
 @import 'components/_plan-container.scss';
 @import 'components/right-sidebar';
+@import 'senctence';
 
 @import "auth";
 
@@ -163,7 +164,7 @@ body {
     justify-content: center;
     margin: 10px;
 
-    .expand-header__titl {
+    .expand-header__title {
       font-size: 24px;
       font-weight: 600;
       overflow: unset;

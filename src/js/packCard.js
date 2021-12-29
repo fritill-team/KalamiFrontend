@@ -32,19 +32,27 @@ export const getRandomTitle = () => cardTitles[Math.floor(Math.random() * cardTi
 
 
 export const cardTemplate = (card = {}) => $(`<div class='mdl-cell mdl-cell--2-col'>
-  <a class='pack-card' href='#' style='color: ${card.color}'>
-  <img class='pack-card__image' src='${card.image}' alt='image'>
-  <p class='pack-card__title  mdl-typography--font-bold'>${card.text}</p>
+  <a class='pack-card ${card.type}' href='#' style='color: ${card.color}' data-data='${JSON.stringify(card)}'>
+    <img class='pack-card__image' src='${card.image}' alt='image'>
+    <p class='pack-card__title  mdl-typography--font-bold'>${card.text}</p>
   </a>
 </div>`)
 
 const container = $('#allCards')
 if (container.length) {
-  for (let i = 0; i <= 20; i++) {
+  for (let i = 0; i <= 6; i++)
     container.append(cardTemplate({
       color: getRandomColor(),
       text: getRandomTitle(),
       image: '/03d4721617f17cd915b3.png',
+      type: "pack"
     }))
-  }
+
+  for (let i = 0; i <= 6; i++)
+    container.append(cardTemplate({
+      color: getRandomColor(),
+      text: getRandomTitle(),
+      image: '/03d4721617f17cd915b3.png',
+      type: "topic"
+    }))
 }
