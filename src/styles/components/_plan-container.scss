@@ -6,10 +6,28 @@
   }
 
   .plans-container__plan {
-    border-radius: 10px;
-    margin-bottom: 67px;
+    position: relative;
+    margin: 5px;
 
-    
+
+    input {
+      display: none;
+
+      &:checked + label {
+        border: 1px solid #a3a3c5;
+
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 99%;
+      height: 96%;
+      border-radius: 10px;
+
+    }
   }
 
   .plans-container__submit {
@@ -56,9 +74,4 @@
 
   }
 
-  .plan-card__title {}
-
-  .plan-card__cards {}
-
-  .plan-card__phrases {}
 }
