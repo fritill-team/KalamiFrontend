@@ -14,7 +14,7 @@
       display: none;
 
       &:checked + label {
-        border: 1px solid #a3a3c5;
+        border: 1px solid #9f9fef;
 
       }
     }
@@ -24,7 +24,7 @@
       top: 0;
       left: 0;
       width: 99%;
-      height: 96%;
+      height: 97%;
       border-radius: 10px;
 
     }
@@ -54,24 +54,13 @@
 
 // plan cards
 
-.plan-card {
-  display: flex;
-  flex-direction: column;
-  width: 120px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background: #c59fbe8a;
-  color: #000;
-  border-radius: 12px;
-  padding: 10px 0;
+.pack-card--sm {
+  width: 27%;
+  padding: 3px 0;
 
 
-  .plan-card__image {
-    margin: 5px;
-    width: 70%;
-    border-radius: 50%;
-
+  .pack-card__title{
+    font-size: 11px;
+    line-height: 1.2;
   }
-
 }
