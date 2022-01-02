@@ -55,23 +55,5 @@
 // plan cards
 
 .plan-card {
-  display: flex;
-  flex-direction: column;
-  width: 120px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background: #c59fbe8a;
-  color: #000;
-  border-radius: 12px;
-  padding: 10px 0;
-
-
-  .plan-card__image {
-    margin: 5px;
-    width: 70%;
-    border-radius: 50%;
-
-  }
-
+  width: 40%;
 }
