@@ -6,7 +6,7 @@ import '@/js/toggle-header'
 import '@/js/packCard'
 import '@/js/sentenceComposition'
 import '@/js/textToSpeach'
-
+import '@/js/scroll'
 window.flip = function(flip) {
   $('#cube').removeClass();
   $('#cube').addClass(flip);
