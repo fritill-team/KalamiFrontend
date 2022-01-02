@@ -14,7 +14,7 @@
       display: none;
 
       &:checked + label {
-        border: 1px solid #a3a3c5;
+        border: 1px solid #9f9fef;
 
       }
     }
@@ -54,6 +54,13 @@
 
 // plan cards
 
-.plan-card {
-  width: 40%;
+.pack-card--sm {
+  width: 27%;
+  padding: 3px 0;
+
+
+  .pack-card__title{
+    font-size: 11px;
+    line-height: 1.2;
+  }
 }

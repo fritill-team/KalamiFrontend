@@ -3,8 +3,18 @@
 
 	.mdl-card__supporting-text
 		form
+
+			#allPlanCards 
+				a(href='#' class="pack-card pack-card--sm")
+					img(src='~images/girl.png' alt='image' class="pack-card__image")
+					.pack-card__title.mdl-typography--font-bold Toys
+					.pack-card__title 24 cards
+					.pack-card__title 72 phrases
+			h5 Unlock Kalami Premium
+			p Functionality of Kalami will always be free. Premium offers +50 additional Assistive Card packs
+		
 			ul.mdl-list
-				li.mdl-list__item.mdl-list__item--three-line.mdl-color--cyan-50.plans-container__plan
+				li.mdl-list__item.mdl-list__item--two-line.mdl-color--cyan-50.plans-container__plan
 					input(type='radio' name='options' value='1' id="list-option-1")
 					label(for='list-option-1')
 					span.mdl-list__item-primary-content
@@ -13,7 +23,7 @@
 					span.mdl-list__item-secondary-content
 						span.mdl-list__item-secondary-info EGP 100/Month
 								
-				li.mdl-list__item.mdl-list__item--three-line.mdl-color--cyan-50.plans-container__plan
+				li.mdl-list__item.mdl-list__item--two-line.mdl-color--cyan-50.plans-container__plan
 					input(type='radio' name='options' value='2' checked='checked' id="list-option-2")
 					label(for='list-option-2')
 					span.mdl-list__item-primary-content
@@ -23,7 +33,7 @@
 						span.mdl-list__item-secondary-info EGP 500/6 Month
 							
 				
-				li.mdl-list__item.mdl-list__item--three-line.mdl-color--cyan-50.plans-container__plan
+				li.mdl-list__item.mdl-list__item--two-line.mdl-color--cyan-50.plans-container__plan
 					input(type='radio' name='options' value='3' id="list-option-3")
 					label(for='list-option-3')
 					span.mdl-list__item-primary-content
@@ -33,7 +43,7 @@
 						span.mdl-list__item-secondary-info EGP 1000/Year
 						
 
-				li.mdl-list__item.mdl-list__item--three-line.mdl-color--cyan-50.plans-container__plan
+				li.mdl-list__item.mdl-list__item--two-line.mdl-color--cyan-50.plans-container__plan
 						input(type='radio' name='options' value='4' id ="list-option-4")
 
 						label(for='list-option-4')
@@ -47,12 +57,4 @@
 				| Subscribe to the Selected Plan
 			p.mdl-typography--body-1.mdl-typography--font-bold.mdl-typography--text-center.mdl-color-text--red-A700 Cancel any time without cost
 
-		#allPlanCards 
-			a(href='#' class="pack-card plan-card")
-				img(src='~images/girl.png' alt='image' class="pack-card__image")
-				.pack-card__title.mdl-typography--font-bold Toys
-				.pack-card__title 24 cards
-				.pack-card__title 72 phrases
-		h5 Unlock Kalami Premium
-		p Functionality of Kalami will always be free. Premium offers +50 additional Assistive Card packs
 		
