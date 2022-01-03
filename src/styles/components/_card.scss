@@ -57,9 +57,10 @@
 
 .demo#section-wipes{
   height: calc(100vh - 60px) !important;
-  width: 100%;
+  // width: 100%;
+  // width: calc(100% - 240px) !important; 
   .scrollmagic-pin-spacer{
-    height: 100vh !important;
+    // height: 100vh !important;
   }
   // overflow: hidden !important;
 }
