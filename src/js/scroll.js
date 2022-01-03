@@ -5,21 +5,24 @@ $(function () { // wait for document ready
   })
   var controller = new ScrollMagic.Controller();
 
+  // var tween = TweenMax()
+    // .fromTo("section.panel.blue", 1, {width: '50%', float: 'right'})
+
   // define movement of panels
   var wipeAnimation = new TimelineMax()
-    .fromTo("section.panel.turqoise", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
-    .fromTo("section.panel.turqoise", 1, {x: "0%"}, {x: "100%", ease: Linear.easeNone})  // in from left
-    .fromTo("section.panel.green",    1, {x:  "-100%"}, {x: "-0%", ease: Linear.easeNone})
-    .fromTo("section.panel.green",    1, {x:  "0%"}, {x: "-100%", ease: Linear.easeNone})  // in from right
-    // .fromTo("section.panel.green",    1, {x:  "-75%"}, {x: "-100%", ease: Linear.easeNone})  // in from right
-    // .fromTo("section.panel.turqoise", 1, {x: "100%"}, {x: "75%", ease: Linear.easeNone})
-    // .fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+    .fromTo("section.panel.turqoise", 1, {x: "0%"}, {x: "100%", ease: Linear.easeAll})
+    .fromTo("section.panel.blue", 1, {x: "0%"}, {x: "100%", ease: Linear.easeAll})
+    .fromTo("section.panel.green", 1, {x:  "-100%"}, {x: "-0%", ease: Linear.easeAll})
+    .fromTo("section.panel.green", 1, {x:  "0%"}, {x: "-100%", ease: Linear.easeAll})
+    .fromTo("section.panel.blue", 1, {x: "100%"}, {x: "0%", ease: Linear.easeAll})
+    .fromTo("section.panel.purple", 1, {x: "100%"}, {x: "0%", ease: Linear.easeAll})
+    
 
-  // create scene to pin and link animation
   new ScrollMagic.Scene({
       triggerElement: "#pinContainer",
       triggerHook: 0.06,
-      duration: "2000"
+      duration: "100%",
+      scrollY: false,
     })
     .setPin("#pinContainer")
     .setTween(wipeAnimation)
