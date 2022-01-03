@@ -3,6 +3,15 @@ $(function () { // wait for document ready
   $(document).on('scroll', function(){
     console.log('scrolling');
   })
+  var elem = document.querySelector(".content");
+  
+  // var scrollbar = Scrollbar.init(elem)
+
+  // scrollbar.addListener(() => {
+  //   scene.refresh()
+  // })
+
+
   var controller = new ScrollMagic.Controller();
 
   // var tween = TweenMax()
@@ -19,10 +28,9 @@ $(function () { // wait for document ready
     
 
   new ScrollMagic.Scene({
-      triggerElement: "#pinContainer",
+      triggerElement: "#trigger",
       triggerHook: 0.06,
-      duration: "100%",
-      scrollY: false,
+      duration: "300%",
     })
     .setPin("#pinContainer")
     .setTween(wipeAnimation)
