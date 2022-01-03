@@ -1,39 +1,52 @@
-extends layouts/app
+extends layouts/guest
+
+block page-title
+	|Home
 
 block content
-
+	//- .mdl-grid
+		.mdl-cell.mdl-cell--12-col
+			h3.display-3 Plans
+		.mdl-cell.mdl-cell--4-col
+			include ./components/plan-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/plan-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/plan-card.pug
 	section#section-wipes.demo
 		#pinContainer
 			section.panel.blue
-				b ONE
+				div.mobile
+				//- p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum id, at ipsum, molestias dicta repellendus eligendi molestiae harum distinctio beatae cupiditate ipsam tempore quas vel veniam. Perspiciatis tempore amet possimus.
 			section.panel.turqoise
-				b TWO
-			section.panel.green
-				b THREE
-		.mdl-grid
-			.mdl-cell.mdl-cell--12-col
-				h3.display-3 Plans
-			.mdl-cell.mdl-cell--4-col
-				include ./components/plan-card.pug
-			.mdl-cell.mdl-cell--4-col
-				include ./components/plan-card.pug
-			.mdl-cell.mdl-cell--4-col
-				include ./components/plan-card.pug
 
-			.mdl-cell.mdl-cell--12-col
-				h3.display-3 Features
-			.mdl-cell.mdl-cell--4-col
-				include ./components/feature-card.pug
-			.mdl-cell.mdl-cell--4-col
-				include ./components/feature-card.pug
-			.mdl-cell.mdl-cell--4-col
-				include ./components/feature-card.pug
-			.mdl-cell.mdl-cell--4-col
-				include ./components/feature-card.pug
-			.mdl-cell.mdl-cell--4-col
-				include ./components/feature-card.pug
-			.mdl-cell.mdl-cell--4-col
-				include ./components/feature-card.pug
+				p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae obcaecati fuga hic velit reprehenderit, veniam cum iure omnis, incidunt animi quo explicabo! Ea iure ipsa laudantium. Maxime molestiae odit vero?
+			section.panel.green
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nemo recusandae quasi natus rem atque quas placeat corrupti ea minima! Soluta veritatis dolorum vel quaerat debitis, velit at dolor. Velit.
+	.mdl-grid
+		.mdl-cell.mdl-cell--12-col
+			h3.display-3 Plans
+		.mdl-cell.mdl-cell--4-col
+			include ./components/plan-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/plan-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/plan-card.pug
+
+		.mdl-cell.mdl-cell--12-col
+			h3.display-3 Features
+		.mdl-cell.mdl-cell--4-col
+			include ./components/feature-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/feature-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/feature-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/feature-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/feature-card.pug
+		.mdl-cell.mdl-cell--4-col
+			include ./components/feature-card.pug
 
 	//- .pricing-table
 		.pricing-header

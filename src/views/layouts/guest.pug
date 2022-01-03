@@ -1,9 +1,9 @@
 extends main
 
 block layout
-	.mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--fixed-header
-		include ../partials/header
+	.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+		include ../partials/full-header
 			block page-title
-			main.mdl-layout__content
-			.page-content
-				block content
+		main.mdl-layout__content
+		.page-content
+			block content
