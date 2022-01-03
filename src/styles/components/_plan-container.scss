@@ -13,7 +13,7 @@
     input {
       display: none;
 
-      &:checked + label {
+      &:checked+label {
         border: 1px solid #9f9fef;
 
       }
@@ -54,13 +54,25 @@
 
 // plan cards
 
-.pack-card--sm {
-  width: 27%;
-  padding: 3px 0;
 
+#allPlanCards {
+  // width: max-content;
 
-  .pack-card__title{
-    font-size: 11px;
-    line-height: 1.2;
+  .pack-card--sm {
+    width: 30%;
+    border-radius: 10px;
+
+    .pack-card__title {
+      // font-weight: 600;
+      color: #000;
+      filter: none;
+    }
+
+    .pack-card__title--sm {
+      color: #262525;
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 300;
+    }
   }
 }
