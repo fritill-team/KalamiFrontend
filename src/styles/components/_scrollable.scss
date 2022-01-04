@@ -14,12 +14,12 @@
   // height: 2px;
   background: red;
 }
-.mdl-layout__container{
+.landing{
   & + div{
     opacity: 0;
     & + div{
       opacity: 0;
-      height: 1000px !important;
+      height: 100vh !important;
     }
   }
 }
@@ -28,7 +28,7 @@
   // margin-top: 60px;
   height: auto !important;
   .scrollmagic-pin-spacer{
-    height: calc(1000px - 60px) !important;
+    height: 100vh !important;
   }  
 }
 #pinContainer {
