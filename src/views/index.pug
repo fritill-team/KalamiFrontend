@@ -34,37 +34,72 @@ block content
 	//- 	#mobile 
 	//- 	#first 
 	//- 	#second
-	//- 	#third 
-	.mdl-grid
-		.mdl-cell.mdl-cell--12-col
-			h3.display-3 Plans
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/plan-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/plan-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/plan-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/plan-card.pug
+	//- 	#third
+	section.plans 
+		.mdl-grid
+			.mdl-cell.mdl-cell--12-col
+				h3.display-3 Plans
+			.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				.plan-card
+					span.material-icons.plan-card__icon send
+					h4.display-4 Basic
+					h4.display-4 100 EGP
+					h5.display-5 Monthly 
+					.mdl-card__supporting-text
+						| 3 Days Free
+					
+					
+			.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				.plan-card
+					span.material-icons.plan-card__icon flight
+					h4.display-4 Pro
+					h4.display-4 500 EGP
+					h5.display-5 Six Months 
+					.mdl-card__supporting-text
+						| 3 Days Free
+						
 
-		.mdl-cell.mdl-cell--12-col
-			h3.display-3 Features
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/feature-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/feature-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/feature-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/feature-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/feature-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/feature-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/feature-card.pug
-		.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
-			include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				.plan-card.plan-card--lg
+					span.material-icons.plan-card__icon recommend
+					h4.display-4 Enterprise
+					h4.display-4 1000 EGP
+					h5.display-5 Yearly 
+					.mdl-card__supporting-text
+						| 3 Days Free
+
+			.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				.plan-card
+					span.material-icons.plan-card__icon rocket_launch
+					h4.display-4 Enterprise
+					h4.display-4 2500 EGP
+					h5.display-5 Lifetime 
+					.mdl-card__supporting-text
+						| 3 Days Free
+
+
+	
+
+	section.features 
+		.mdl-grid
+			.mdl-cell.mdl-cell--12-col
+				h3.display-3 Features
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			//- .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+			//- 	include ./components/feature-card.pug
+			//- .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+			//- 	include ./components/feature-card.pug
 
 	//- .pricing-table
 		.pricing-header

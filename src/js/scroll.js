@@ -8,14 +8,12 @@ $(function () { // wait for document ready
 
   var wipeAnimation = new TimelineMax()
     .fromTo("section.panel.turqoise", 1, {x: "0%"}, {x: "100%", ease: Linear.easeAll})
-    .fromTo("#screen1", 1, {opacity: 1}, {opacity: 0})
     .fromTo("section.panel.blue", 1, {x: "0%"}, {x: "100%", ease: Linear.easeAll})
     .fromTo("#screen2", 1, {opacity: 0}, {opacity: 1})
     .fromTo("section.panel.green", 1, {x:  "-100%"}, {x: "-0%", ease: Linear.easeAll})
-    .fromTo("#screen2", 1, {opacity: 1}, {opacity: 0})
     .fromTo("section.panel.green", 1, {x:  "0%"}, {x: "-100%", ease: Linear.easeAll})
-    .fromTo("#screen3", 1, {opacity: 0}, {opacity: 1})
     .fromTo("section.panel.blue", 1, {x: "100%"}, {x: "0%", ease: Linear.easeAll})
+    .fromTo("#screen3", 1, {opacity: 0}, {opacity: 1})
     .fromTo("section.panel.purple", 1, {x: "100%"}, {x: "0%", ease: Linear.easeAll})
     
 
