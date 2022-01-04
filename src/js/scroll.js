@@ -3,7 +3,7 @@ $(function () { // wait for document ready
   $(document).on('scroll', function(){
     console.log('scrolling');
   })
-  var elem = document.querySelector(".content");
+  // var elem = document.querySelector(".content");
   
   // var scrollbar = Scrollbar.init(elem)
 
@@ -30,10 +30,35 @@ $(function () { // wait for document ready
   new ScrollMagic.Scene({
       triggerElement: "#trigger",
       triggerHook: 0.06,
-      duration: "300%",
+      duration: "500%",
     })
     .setPin("#pinContainer")
     .setTween(wipeAnimation)
     .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 });
+
+// $(function(){
+//   var tl = new TimelineMax({onUpdate: updatePercentage});
+
+//   const controller = new ScrollMagic.Controller();
+
+//   tl.from("#first", 0.5, {x: '100%', opacity: 0})
+//   // tl.from('#first', 0.5, {x: '100%'})
+//   // tl.from('#second', 0.5, {x: '0%'})
+
+//   const scene = new ScrollMagic.Scene({
+//     triggerElement: '.hero',
+//     triggerHook: 'onLeave',
+//     duration: '100%',
+//     trigger: true
+//   })
+//   .setPin('.hero')
+//   .setTween(tl)
+//   .addTo(controller)
+
+//   function updatePercentage(){
+//     tl.progress();
+//     console.log(tl.progress());
+//   }
+// })
