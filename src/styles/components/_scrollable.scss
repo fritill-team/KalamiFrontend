@@ -44,17 +44,25 @@
   height: 100%;
   position: absolute;
   &.blue{
-    // background-color: #3F51B5;
-    // margin-left: auto !important;
     width: 50% !important;
+    height: 100%;
     display: flex;
     justify-content: center;
-    // align-self: center;
-    background: center url('https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/nexus5x.png') no-repeat;
-    // .mobile{
-    //   width: 300px;
-    //   height: 600px;
-    // }
+    align-items: center;
+    .mobile{
+      background: center url('https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/nexus5x.png') no-repeat ;
+      width: 350px;
+      height: 700px;
+      position: relative;
+      img{
+        position: absolute;
+        top: 69px;
+        left: 15px;
+        width: 316px;
+        height: 555px;
+        opacity: 0;
+      }
+    }
   }
   &.turqoise, &.green, &.purple{
     width: 50% !important;
