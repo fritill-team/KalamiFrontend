@@ -49,6 +49,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // background: center url('https://source.unsplash.com/720x400/travel') no-repeat;
     .mobile{
       background: center url('https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/nexus5x.png') no-repeat ;
       width: 350px;
@@ -69,7 +70,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     padding: 20px;
     color: #3F51B5;
     top: 0 !important;
@@ -77,15 +78,17 @@
   &.turqoise{
     background-color: #B3E5FC;
     right: 0 !important;
-
-    text-align: center;
+    align-items: flex-start;
+    // text-align: center;
   }
   &.purple{
     background-color: #F8BBD0;
     right: 0 !important;
+    align-items: flex-start;
   }
   &.green{
     background-color: #D1C4E9;
+    align-items: flex-end;
   }
 }
 
