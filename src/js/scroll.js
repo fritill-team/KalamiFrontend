@@ -1,7 +1,7 @@
 $(function () { // wait for document ready
   // init
   $(document).on('scroll', function(){
-    console.log('scrolling');
+    // console.log('scrolling');/
   })
 
   var controller = new ScrollMagic.Controller();
@@ -18,12 +18,62 @@ $(function () { // wait for document ready
     
 
   new ScrollMagic.Scene({
-      triggerElement: "#trigger",
+      triggerElement: "onLeave",
       triggerHook: 0.06,
-      duration: "500%",
+      duration: "300%",
     })
     .setPin("#pinContainer")
     .setTween(wipeAnimation)
     .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
-});
+
+
+    //   slidesToShow: 3,
+    //   slidesToScroll: 1,
+    //   asNavFor: '.slider-for',
+    //   dots: true,
+    //   centerMode: true,
+    //   focusOnSelect: true
+    // })
+    
+  });
+
+  
+  $('.slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '30px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+    // dots: true,
+    // centerMode: true,
+    // focusOnSelect
+  })

@@ -34,6 +34,9 @@
   overflow: visible;
   padding: 20px;
   align-self: flex-end;
+  color: #777;
+  text-decoration: none;
+  text-align: center;
   // width: 100%;
   h4,h5{
     margin-top: 0;
@@ -66,4 +69,8 @@
   .mdl-card__supporting-text{
     text-align: center;
   }
+}
+
+.slider{
+  width: 100%;
 }
