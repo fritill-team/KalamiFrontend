@@ -1,6 +1,20 @@
 .slider{
   width: 90%;
   margin: 0 auto ;
+  .slick-arrow{
+    width: 30px;
+    height: 30px;
+    &::before{
+      font-size: 28px;
+      color: #4051B5;
+    }
+    &.slick-next{
+      right: -26px;
+    }
+    &.slick-prev{
+      left: -26px;
+    }
+  }
   .slick-list{
     // padding: 30px 0;
     .slick-track{

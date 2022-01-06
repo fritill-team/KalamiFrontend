@@ -42,7 +42,7 @@ $(function () { // wait for document ready
   $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: false,
     responsive: [
       {
@@ -80,13 +80,13 @@ $(function () { // wait for document ready
   $('.packs-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: false,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
+          // arrows: false,
           // centerMode: true,
           // centerPadding: '30px',
           slidesToShow: 2
@@ -95,7 +95,7 @@ $(function () { // wait for document ready
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
+          // arrows: false,
           // centerMode: true,
           // centerPadding: '40px',
           slidesToShow: 1
