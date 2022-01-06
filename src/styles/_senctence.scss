@@ -9,7 +9,9 @@
   width: calc(100% - 240px);
   z-index: 5;
   margin-bottom: 20px;
-
+  @media (max-width: 1024px) {
+    margin-left: 0;
+  }
   #sub-header {
     overflow-x: auto;
     overflow-y: hidden;

@@ -1,8 +1,11 @@
 .mdl-layout__drawer {
-  min-height: 750px;
+  // min-height: 750px;
+  height: 100%;
   overflow: hidden;
   background-color: #edeeef;
-
+  @media (max-width: 1024px) {
+    z-index: 6;
+  }
   img {
     width: 50%;
   }

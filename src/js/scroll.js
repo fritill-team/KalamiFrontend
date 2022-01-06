@@ -77,3 +77,29 @@ $(function () { // wait for document ready
     // centerMode: true,
     // focusOnSelect
   })
+  $('.packs-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: '30px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  })

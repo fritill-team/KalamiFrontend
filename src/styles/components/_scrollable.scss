@@ -29,11 +29,11 @@
 }
 .demo#section-wipes{
   background-color: lightcoral;
-  margin-top: 60px;
+  // margin-top: 60px;
   height: auto !important;
   position: relative;
   @media (max-width: 1024px){
-    margin-top: 55px;
+    // margin-top: 55px;
   }
   
   .scrollmagic-pin-spacer{
@@ -65,17 +65,17 @@
     // background: center url('https://source.unsplash.com/720x400/travel') no-repeat;
     .mobile{
       background: center url('https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/nexus5x.png') no-repeat ;
-      width: 350px;
-      height: 700px;
+      width: 280px;
+      height: 600px;
       position: relative;
       background-size: contain;
-
+      top: 30px;
       img{
         position: absolute;
-        top: 69px;
-        left: 15px;
-        width: 316px;
-        height: 555px;
+        width: 254px;
+        height: 443px;
+        top: 75px;
+        left: 12px;
         opacity: 0;
         &:first-of-type{
           opacity: 1;

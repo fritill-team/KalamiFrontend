@@ -10,7 +10,7 @@
   position: relative;
   transition: transform .7s;
   text-decoration: none;
-
+  // color: #fff;
   &:before {
     content: '';
     display: block;
@@ -25,6 +25,7 @@
     color: inherit;
     background-color: currentColor;
     transition: opacity .2s cubic-bezier(.4, 0, .6, 1);
+    // z-index: 0;
   }
 
   &:hover,
@@ -42,6 +43,7 @@
     width: 50%;
     height: 50%;
     margin-bottom: 8px;
+    z-index: 2;
   }
 
   .pack-card__title {
@@ -54,4 +56,12 @@
 
 #allCards {
   background-color: #fff;
+}
+
+.packs-slider{
+  width: 100%;
+  margin-bottom: 20px;
+  .pack-card{
+    transform: scale(.9);
+  }
 }
