@@ -21,6 +21,12 @@ body {
   height: 100%;
 }
 
+html[dir='rtl']{
+  body{
+    font-family: 'Tajawal', sans-serif;
+  }
+}
+
 #header {
   position: fixed;
   top: 0;

@@ -1,7 +1,6 @@
 .sentence-bar {
   position: relative;
   padding: 16px;
-
   height: 100px;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
   background-color: #e4e4ee;
@@ -27,6 +26,11 @@
     width: 100px;
     min-width: 100px;
     margin-right: 16px;
+    padding-top: 26px;
+    // height: 300px;
+    .pack-card__image{
+      height: 50px;
+    }
   }
 
   .play-button {
@@ -40,7 +44,12 @@
 .sentence-close{
   color: #363333;
   position: absolute;
-  top: 2px;
-  left: 1px;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  padding: 4px;
+  background-color: #fff;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
 
