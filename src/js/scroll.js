@@ -42,6 +42,7 @@ $(function () { // wait for document ready
   $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    infinite: false,
     arrows: true,
     dots: false,
     responsive: [
@@ -80,6 +81,7 @@ $(function () { // wait for document ready
   $('.packs-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    infinite: false,
     arrows: true,
     dots: false,
     responsive: [

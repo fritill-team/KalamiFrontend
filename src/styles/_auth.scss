@@ -57,20 +57,34 @@
 
 #cube.show-front {
     // transform: translateZ(-165px) rotateY(0deg);
+    
 }
 
 #cube.show-left {
     transform: translateX(0px) translateZ(0px) rotateY(90deg);
+    
 }
 
 #cube.show-bottom {
     transform: rotateX(90deg);
+    
 }
 
 #cube {
-    transition: transform .4s;
+    transition: transform .4s; 
 }
 
+.fade{
+  animation-name: fade;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+  // 0%   {opacity: 1;}
+  0%  {opacity: 0;}
+  100% {opacity: 1;}
+}
 
 
 .login-divider {

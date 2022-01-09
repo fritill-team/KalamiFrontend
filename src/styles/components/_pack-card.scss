@@ -63,6 +63,10 @@
   margin-bottom: 20px;
   .pack-card{
     transform: scale(.9);
+    .pack-card__title{
+      filter: invert(0);
+      color: #fff;
+    }
   }
   .slick-arrow{
     &::before{

@@ -12,3 +12,10 @@ window.flip = function(flip) {
   $('#cube').removeClass();
   $('#cube').addClass(flip);
 }
+
+$(document).on('click', '.auth-animation', function(){
+  $('#cube').addClass('fade')
+  setTimeout(() => {
+    $('#cube').removeClass('fade')
+  }, 700);
+})

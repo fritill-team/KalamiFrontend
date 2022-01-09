@@ -19,7 +19,7 @@ figure.front
 						input#remember(type='checkbox')
 						label(for='remember') Remember Me
 
-					a.mdl-color-text--primary.mdl-cell.mdl-cell--6-col.mdl-typography--text-right(onclick='flip("show-bottom")' style='float: right ; cursor: pointer ')
+					a.mdl-color-text--primary.mdl-cell.mdl-cell--6-col.mdl-typography--text-right.auth-animation(onclick='flip("show-bottom")' style='float: right ; cursor: pointer ')
 							| Lost
 							| Password?
 				
@@ -36,5 +36,5 @@ figure.front
 								img(src="~images/google-icon.png", alt="icon" class="login-icon")
 
 						span have an account? 
-						a.mdl-color-text--primary(onclick='flip("show-left")' style='cursor: pointer') Sign up!
+						a.mdl-color-text--primary.auth-animation(onclick='flip("show-left")' style='cursor: pointer') Sign up!
 						
