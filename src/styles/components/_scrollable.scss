@@ -206,3 +206,9 @@
     }
   }
 }
+
+body{
+  animation-name: fade;
+  animation-duration: .3s;
+  animation-timing-function: ease-in-out;
+}

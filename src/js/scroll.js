@@ -1,8 +1,40 @@
 $(function () { // wait for document ready
+  // var something = (function() {
+  //   var executed = false;
+  //   return function() {
+  //       if (!executed) {
+  //           executed = true;
+  //           location.reload();
+  //           // do something
+  //       }
+  //       // console.log(executed);
+  //     };
+  //   });
+  
+  // something(); // "do something" happens
+  // something();
+  window.scrollTo(0,document.body.scrollHeight);
+  $('html, body').animate({
+    scrollTop: $('#section-wipes').offset().top
+  }, 'fast');
+  // window.scrollTo(0, 0);
+  // $("body").scrollTop(0);
+  // $("body").scrollTop(100);
+  // $(document).scrollTop(0);
+  // window.scrollBottom(0);
+  // const reload = () => {
+  //   let doc = false;
+  //   if (!doc){
+  //     console.log(doc);
+  //   }
+  // }
+
   // init
   $(document).on('scroll', function(){
     // console.log('scrolling');/
   })
+
+  // $('.plans').scrollTop(0)
 
   var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 1500}});
 
